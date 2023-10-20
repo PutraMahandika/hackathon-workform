@@ -1,0 +1,255 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="../style/details.css" type="text/css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    </head>
+    <body>
+        <div class="container-fluid" id="body">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="row align-items-center" style="width: 100%;">
+                    <div class="col-3 text-start">
+                        <a class="navbar-brand" href="home.html"><img src="../images/Logo-WF.png"></a>
+                    </div>
+                    <div class="col-6 text-center">
+                        <div class="row justify-content-center">
+                            <div class="col-2 text-end" id="dropdowns">
+                                <div class="dropdown">
+                                    <button id="dropdowns" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Location
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-2" id="dropdowns">
+                                <div class="dropdown">
+                                    <a href="use_case.html" id="dropdowns" class="btn btn-secondary" type="button" style="width: 90px;">
+                                    Use Case
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-2 text-start" id="dropdowns">
+                                <div class="dropdown">
+                                    <a id="dropdowns" class="btn btn-secondary" href="aboutUs.html">
+                                      Blog
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row justify-content-center">
+                            <div class="col-5" id="form"></div>
+                            <div class="col text-end" id="login">
+                                <a class="btn btn-primary" href="logintes.html">Login</a>
+                            </div>
+                            <div class="col-4" id="signup">
+                                <a class="btn btn-primary" href="signup.html">Sign up</a>
+                            </div>
+                            <div class="col text-end" id="logout">
+                                <button class="btn btn-primary" onclick="logout()" style="display: inline-block;">logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid" id="bread">
+                <div class="row" style="width: 100%;">
+                    <div class="col text-start">
+                        <nav aria-label="breadcrumb" id="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                              <li class="breadcrumb-item"><a href="use_case.html">Use Case</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Details</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" id="content" style="width: 100%; height: 840px;">
+                <div class="col" id="gallery">
+                    <div id="carouselImage" class="carousel slide" style="margin-bottom: 16px;">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselImage" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselImage" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselImage" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../images/usecase-card1.png" class="d-block w-100" >
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/usecase-card2.png" class="d-block w-100" >
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/usecase-card3.png" class="d-block w-100" >
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselImage" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselImage" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="container text-center" style="height: 124px; padding: 0;">
+                        <button type="button" data-bs-target="#carouselImage" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img src="../images/usecase-card1.png"></button>
+                        <button type="button" data-bs-target="#carouselImage" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 1"><img src="../images/usecase-card2.png"></button>
+                        <button type="button" data-bs-target="#carouselImage" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 1" style="margin-right: 0;"><img src="../images/usecase-card3.png"></button>
+                    </div>
+                </div>
+                <div class="col text-start" id="deskripsi">
+                    <h1 style="font-weight: bold; margin-bottom: 16px;">KG - Outdoor</h1>
+                    <p style="margin-bottom: 16px;">Jl. Iskandar Muda No.7, Petisah Hulu, Kec. Medan Baru, Kota Medan, Sumatera Utara 20153</p>
+                    <div style="margin-bottom: 16px;"><span style="font-weight: bold; font-size: 28px;">Rp 1.710.000 </span><span style="color: var(--bs-danger); font-size: 20px;">Rp 1.900.000 </span><span style="font-size: 20px; color: var(--bs-secondary);">/Day</span><br></div>
+                    <div style="margin-bottom: 16px;"><span style="color: var(--bs-gray-800);">High Speed Internet 24/7 Building Access Printing Service Coffee</span><br></div>
+                    <div style="margin-bottom: 16px;"><span style="color: var(--bs-gray-800);">8 Bangku 1 Meja Strategis</span></div>
+                    <div style="margin-bottom: 16px;"><hr style="color: var(--bs-gray-800);"></div>
+                    <div><span>Durasi</span></div>
+                    <div class="input-group" style="margin-bottom: 16px;">
+                        <input type="text" class="form-control" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Start date">
+                        <span class="input-group-text">></span>
+                        <input type="text" class="form-control" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="End date">
+                    </div>
+                    <h5><b>Tambahan barang</b></h5>
+                    <div class="row" style="margin-bottom: 16px;">
+                        <div class="col">
+                            <h6 style="color: var(--bs-gray-900);"><b>Kursi</b></h6>
+                            <span style="margin-bottom: 8px;">Terdapat tambahan 3 kursi</span><br>
+                            <span style="color: var(--bs-gray-600);">Tambahan kursi</span>
+                            <div class="input-group mb-3">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon1kurang" style="background-color: var(--bs-gray-200);" onclick="kurang()">-</button>
+                                <input type="number" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" id="tambahkursi" value="0">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon1tambah" style="background-color: var(--bs-gray-200);" onclick="tambah()">+</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6 style="color: var(--bs-gray-900);"><b>Meja</b></h6>
+                            <span style="margin-bottom: 8px;">Terdapat tambahan 3 meja</span><br>
+                            <span style="color: var(--bs-gray-600);">Tambahan meja</span>
+                            <div class="input-group mb-3">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon1kurang" style="background-color: var(--bs-gray-200);" onclick="kurang1()">-</button>
+                                <input type="number" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" id="tambahmeja" value="0">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon1tambah" style="background-color: var(--bs-gray-200);" onclick="tambah1()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="total">
+                        <div class="row">
+                            <div class="col text-start">
+                                <span>Subtotal</span>
+                            </div>
+                            <div class="col text-end">
+                                <span>Rp 1.710.000</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-start">
+                                <span><b>Tambahan item</b></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-start">
+                                <span>Kursi</span>
+                            </div>
+                            <div class="col text-end">
+                                <span id="totalkursi"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-start">
+                                <span>meja</span>
+                            </div>
+                            <div class="col text-end">
+                                <span id="totalmeja"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-start">
+                                <span>pajak</span>
+                            </div>
+                            <div class="col text-end">
+                                <span>Rp 5.000</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-start">
+                                <span><b>Total</b></span>
+                            </div>
+                            <div class="col text-end">
+                                <h5 id="totalHarga"><b>Rp 1.715.000</b></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="method">Pilih Metode Pembayaran</button>
+                </div>
+            </div>
+            <div class="container-fluid" id="footer">
+                <div class="row justify-content-center text-start">
+                    <div class="col" >
+                        <img src="../images/Logo-WF.png">
+                        <p style="width: 270px; margin: 15px 0px;">Komp. Ruko Centre Point Medan Jalan Timor Blok G No. III/IV 2nd Floor, Gang Buntu, Medan Timur, Medan City, North Sumatra 20231</p>
+                        <p>(+6261) 805 109 77</p>
+                    </div>
+                    <div class="col text-end" >
+                        <div class="row" id="rowfooter">
+                            <div class="col-4">
+                                
+                            </div>
+                            <div class="col text-start">
+                                <h5>LOCATION</h5><br>
+                                <p>
+                                    Clapham<br>
+                                    The 101<br>
+                                    Yafurni<br>
+                                    Spasi<br>
+                                    Kalingga<br>
+                                </p>
+                                
+                            </div>
+                            <div class="col text-start">
+                                <h5>USE CASE</h5>
+                                <p>
+                                    Event<br>
+                                    Meeting<br>
+                                    Office<br>
+                                    Photo Shoot<br>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <h5>COMPANY</h5>
+                                <p>
+                                    Contact Us<br>
+                                    Blog<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border-top: 1px solid var(--bs-gray-500);">
+            </div>
+            
+        </div>
+        <script src="../script/logout.js"></script>
+        <script src="../script/details.js"></script>
+    </body>
+</html>
