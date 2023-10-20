@@ -1,0 +1,247 @@
+:root {
+    --bs-workfrom: #d2ff98;
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #dee2e6;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0.375rem;
+    --bs-border-radius-sm: 0.25rem;
+    --bs-border-radius-lg: 0.5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-link-color: #0d6efd;
+    --bs-link-hover-color: #0a58ca;
+    --bs-code-color: #d63384;
+    --bs-highlight-bg: #fff3cd;
+}
+
+.btn, a, p, h1, h5, h2, h6, input, span{
+    font-family: poppins;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.navbar{
+    padding: 8px 30px;
+    width: 100%;
+}
+
+button.btn#dropdowns, a#dropdowns{
+    padding: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    color: black;
+}
+
+button.btn#dropdowns:hover, #login a:hover, a#dropdowns:hover {
+    background-color: var(--bs-gray-300);
+}
+
+#login, #signup, #logout, #form{
+    padding: 5px;
+}
+
+#login a{
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    color: black;
+}
+
+#signup a{
+    background-color: var(--bs-workfrom);
+    color: black;
+    border-color: var(--bs-workfrom);
+}
+
+#signup a:hover, .btn#booknow:hover{
+    background-color: #b4db80;
+}
+
+#bread{
+    background-color: white;
+    height: 45px;
+}
+
+.col #breadcrumb{
+    padding: 10px 25px;
+}
+
+#banner{
+    height: 224px;
+    background-color: var(--bs-dark);
+    padding: 64px 0px;
+}
+
+#banner .row{
+    height: 100%;
+}
+
+#banner h1{
+    color: white;
+    width: 473px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#filter{
+    background-color: white;
+    height: 100px;
+    padding: 30px;
+}
+
+#filter .row, #filter .col{
+    width: 100%;
+    height: 100%;
+}
+
+#filter #kategori, #filter #harga{
+    width: 250px;
+    display: inline-block;
+}
+
+#filter #harga #addon-min, #addon-max{
+    display: inline-block;
+    width: 50px;
+}
+
+#filter #harga #addon-min1, #addon-max1{
+    display: inline-block;
+    width: 200px;
+    margin-left: -5px;
+}
+
+#filter .btn{
+    margin-top: -5px;
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+}
+
+#filter .btn:hover{
+    background-color: var(--bs-gray-800);
+    border-color: var(--bs-gray-800);
+}
+
+#content{
+    padding: 30px 50px;
+}
+
+#cards{
+    height: 90%;
+    margin: 40px 0px;
+}
+
+#cards .col-3{
+    background-color: var(--bs-white);
+    padding: 0;
+    margin: 0 7px;
+    width: 23%;
+}
+
+#cards .container#card{
+    padding: 0;
+    border-radius: 8px;
+    border-color: var(--bs-gray-400);
+    border-width: 1px;
+    border-style: solid;
+}
+
+#cards img{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#cards #content #header, #cards #content #badges{
+    padding: 0px;
+}
+
+#cards #content #badges .badge{
+    background-color: var(--bs-gray-800);
+    margin-bottom: 5px;
+}
+
+#cards #content #header .row{
+    height: 10%;
+}
+
+#cards a{
+    width: 100%;
+}
+
+#cards #chat, #cards #lihat:hover{
+    border-color: var(--bs-dark);
+    background-color: white;
+    color: black;
+}
+
+#cards #lihat, #cards #chat:hover{
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+    color: white;
+}
+
+.pagination a{
+    color: black;
+}
+
+.pagination a:focus{
+    color: white;
+    background-color: black;
+    box-shadow: none;
+}

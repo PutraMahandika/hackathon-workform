@@ -1,0 +1,577 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="../style/use_case.css" type="text/css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    </head>
+    <body>
+        <div class="container-fluid" id="body">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="row align-items-center" style="width: 100%;">
+                    <div class="col-3 text-start">
+                        <a class="navbar-brand" href="home.html"><img src="../images/Logo-WF.png"></a>
+                    </div>
+                    <div class="col-6 text-center">
+                        <div class="row justify-content-center">
+                            <div class="col-2 text-end" id="dropdowns">
+                                <div class="dropdown">
+                                    <button id="dropdowns" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Location
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-2" id="dropdowns">
+                                <div class="dropdown">
+                                    <a href="use_case.html" id="dropdowns" class="btn btn-secondary" type="button" style="width: 90px;">
+                                    Use Case
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-2 text-start" id="dropdowns">
+                                <div class="dropdown">
+                                    <a id="dropdowns" class="btn btn-secondary" href="aboutUs.html">
+                                      Blog
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row justify-content-center">
+                            <div class="col-5" id="form"></div>
+                            <div class="col text-end" id="login">
+                                <a class="btn btn-primary" href="logintes.html">Login</a>
+                            </div>
+                            <div class="col-4" id="signup">
+                                <a class="btn btn-primary" href="signup.html">Sign up</a>
+                            </div>
+                            <div class="col text-end" id="logout">
+                                <button class="btn btn-primary" onclick="logout()" style="display: inline-block;">logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid" id="bread">
+                <div class="row" style="width: 100%;">
+                    <div class="col text-start">
+                        <nav aria-label="breadcrumb" id="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Use Case</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="banner">
+                <div class="row text-center align-items-center" style="width: 100%;">
+                    <div class="col">
+                        <h1>Temukan Ruangan untuk <span style="color: var(--bs-workfrom);">Setiap Pekerjaan</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="filter">
+                <div class="row align-items-center">
+                    <div class="col text-center">
+                        <select class="form-select" id="kategori">
+                            <option selected>Event (42)</option>
+                            <option value="1">Meeting (44)</option>
+                            <option value="2">Photoshoot (6)</option>
+                            <option value="3">Office (4)</option>
+                        </select>
+                        <select class="form-select" id="kategori">
+                            <option selected>Dki Jakarta</option>
+                            <option value="1">Medan</option>
+                            <option value="2">Bandung</option>
+                            <option value="3">Banten</option>
+                            <option value="4">Jawa Tengah</option>
+                            <option value="5">Bali</option>
+                        </select>
+                        <input type="text" class="form-control" placeholder="Kapasitas" id="kategori" style="width: 150px;">
+                        <div class="input-group" id="harga">
+                            <span class="input-group-text" id="addon-min">Min</span>
+                            <input type="text" class="form-control" placeholder="Harga Minimal" id="addon-min1">
+                        </div>
+                        <div class="input-group" id="harga">
+                            <span class="input-group-text" id="addon-max">Max</span>
+                            <input type="text" class="form-control" placeholder="Harga Maximal" id="addon-max1">
+                        </div>
+                        <button type="button" class="btn btn-primary">Cari</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="content">
+                <div class="row justify-content-center text-center" id="cards">
+                    <div class="col-3 text-start">
+                        <div class="container" id="card">
+                            <img src="../images/usecase-card1.png">
+                            <div class="container" id="content" style="padding: 16px;">
+                                <div class="container" id="header">
+                                    <div class="container" id="badges">
+                                        <span class="badge rounded-pill" style="margin-right: 2px;">Corporate Event</span>
+                                        <span class="badge rounded-pill" style="margin: 0px 2px;">Meeting</span>
+                                        <span class="badge rounded-pill">Presentation</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 text-start">
+                                            <h5 style="font-weight: bold;">KG - Outdoor</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span class="badge rounded-pill" style="background-color: var(--bs-workfrom); color: black;">
+                                                Promo
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="padding: 0px; margin-bottom: 5px;">
+                                        <h6 style="color: var(--bs-gray-600);">Jakarta Selatan</h6>
+                                    </div>
+                                    <div class="container" style="padding: 0px;">
+                                        <h6 style="color: #0a58ca">5km dari mu</h6>
+                                    </div>
+                                </div>
+                                <p style="font-size: 14px; height: 15%;">Jl. Iskandar Muda No.7, Petisah Hulu, Kec. Medan Baru, Kota Medan, Sumatera Utara 20153</p>
+                                <div class="container" id="footer" style="padding: 0px;">
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <div class="col text-start">
+                                            <span>8 orang</span>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span style="font-weight: bold;">Rp. 1.550.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-start">
+                                            <p><span style="color: var(--bs-warning);">4.8</span><span style="color: var(--bs-gray-600);"> (12)</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="chat" href="chat-mitra.html">Chat</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="lihat" href="details.html">Pesan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 text-start">
+                        <div class="container" id="card">
+                            <img src="../images/usecase-card2.png">
+                            <div class="container" id="content" style="padding: 16px;">
+                                <div class="container" id="header">
+                                    <div class="container" id="badges">
+                                        <span class="badge rounded-pill" style="margin-right: 2px;">Corporate Event</span>
+                                        <span class="badge rounded-pill" style="margin: 0px 2px;">Meeting</span>
+                                        <span class="badge rounded-pill">Presentation</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 text-start">
+                                            <h5 style="font-weight: bold;">Sudirman 7.8 - Aula Lt.3</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span class="badge rounded-pill" style="background-color: var(--bs-workfrom); color: black;">
+                                                Promo
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="padding: 0px; margin-bottom: 5px;">
+                                        <h6 style="color: var(--bs-gray-600);">Jakarta Selatan</h6>
+                                    </div>
+                                    <div class="container" style="padding: 0px;">
+                                        <h6 style="color: #0a58ca">6km dari mu</h6>
+                                    </div>
+                                </div>
+                                <p style="font-size: 14px; height: 15%;">Jl. Iskandar Muda No.7, Petisah Hulu, Kec. Medan Baru, Kota Medan, Sumatera Utara 20153</p>
+                                <div class="container" id="footer" style="padding: 0px;">
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <div class="col text-start">
+                                            <span>20 orang</span>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span style="font-weight: bold;">Rp. 1.550.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-start">
+                                            <p><span style="color: var(--bs-warning);">4.8</span><span style="color: var(--bs-gray-600);"> (12)</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="chat" href="chat-mitra.html">Chat</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="lihat" href="details.html">Pesan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 text-start">
+                        <div class="container" id="card">
+                            <img src="../images/usecase-card3.png">
+                            <div class="container" id="content" style="padding: 16px;">
+                                <div class="container" id="header">
+                                    <div class="container" id="badges">
+                                        <span class="badge rounded-pill" style="margin-right: 2px;">Corporate Event</span>
+                                        <span class="badge rounded-pill" style="margin: 0px 2px;">Meeting</span>
+                                        <span class="badge rounded-pill">Presentation</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 text-start">
+                                            <h5 style="font-weight: bold;">Plaza Indonesia - Lt.8</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span class="badge rounded-pill" style="background-color: var(--bs-workfrom); color: black;">
+                                                Promo
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="padding: 0px; margin-bottom: 5px;">
+                                        <h6 style="color: var(--bs-gray-600);">Jakarta Selatan</h6>
+                                    </div>
+                                    <div class="container" style="padding: 0px;">
+                                        <h6 style="color: #0a58ca">5km dari mu</h6>
+                                    </div>
+                                </div>
+                                <p style="font-size: 14px; height: 15%;">Jl. Iskandar Muda No.7, Petisah Hulu, Kec. Medan Baru, Kota Medan, Sumatera Utara 20153</p>
+                                <div class="container" id="footer" style="padding: 0px;">
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <div class="col text-start">
+                                            <span>8 orang</span>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span style="font-weight: bold;">Rp. 1.550.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-start">
+                                            <p><span style="color: var(--bs-warning);">4.8</span><span style="color: var(--bs-gray-600);"> (12)</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="chat" href="chat-mitra.html">Chat</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="lihat" href="details.html">Pesan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 text-start">
+                        <div class="container" id="card">
+                            <img src="../images/usecase-card4.png">
+                            <div class="container" id="content" style="padding: 16px;">
+                                <div class="container" id="header">
+                                    <div class="container" id="badges">
+                                        <span class="badge rounded-pill" style="margin-right: 2px;">Corporate Event</span>
+                                        <span class="badge rounded-pill" style="margin: 0px 2px;">Meeting</span>
+                                        <span class="badge rounded-pill">Presentation</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 text-start">
+                                            <h5 style="font-weight: bold;">JSX Tower - Office Room 3</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span class="badge rounded-pill" style="background-color: var(--bs-workfrom); color: black;">
+                                                Promo
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="padding: 0px; margin-bottom: 5px;">
+                                        <h6 style="color: var(--bs-gray-600);">Jakarta Selatan</h6>
+                                    </div>
+                                    <div class="container" style="padding: 0px;">
+                                        <h6 style="color: #0a58ca">5km dari mu</h6>
+                                    </div>
+                                </div>
+                                <p style="font-size: 14px; height: 15%;">Jl. Iskandar Muda No.7, Petisah Hulu, Kec. Medan Baru, Kota Medan, Sumatera Utara 20153</p>
+                                <div class="container" id="footer" style="padding: 0px;">
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <div class="col text-start">
+                                            <span>8 orang</span>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span style="font-weight: bold;">Rp. 1.550.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-start">
+                                            <p><span style="color: var(--bs-warning);">4.8</span><span style="color: var(--bs-gray-600);"> (12)</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="chat" href="chat-mitra.html">Chat</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="lihat" href="details.html">Pesan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center" id="cards">
+                    <div class="col-3 text-start">
+                        <div class="container" id="card">
+                            <img src="../images/usecase-card5.png">
+                            <div class="container" id="content" style="padding: 16px;">
+                                <div class="container" id="header">
+                                    <div class="container" id="badges">
+                                        <span class="badge rounded-pill" style="margin-right: 2px;">Corporate Event</span>
+                                        <span class="badge rounded-pill" style="margin: 0px 2px;">Meeting</span>
+                                        <span class="badge rounded-pill">Presentation</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 text-start">
+                                            <h5 style="font-weight: bold;">The Energy Building - No.12</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span class="badge rounded-pill" style="background-color: var(--bs-workfrom); color: black;">
+                                                Promo
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="padding: 0px; margin-bottom: 5px;">
+                                        <h6 style="color: var(--bs-gray-600);">Jakarta Selatan</h6>
+                                    </div>
+                                    <div class="container" style="padding: 0px;">
+                                        <h6 style="color: #0a58ca">7km dari mu</h6>
+                                    </div>
+                                </div>
+                                <p style="font-size: 14px; height: 15%;">Jl. Iskandar Muda No.7, Petisah Hulu, Kec. Medan Baru, Kota Medan, Sumatera Utara 20153</p>
+                                <div class="container" id="footer" style="padding: 0px;">
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <div class="col text-start">
+                                            <span>8 orang</span>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span style="font-weight: bold;">Rp. 1.550.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-start">
+                                            <p><span style="color: var(--bs-warning);">4.8</span><span style="color: var(--bs-gray-600);"> (12)</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="chat" href="chat-mitra.html">Chat</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="lihat" href="details.html">Pesan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 text-start">
+                        <div class="container" id="card">
+                            <img src="../images/usecase-card6.png">
+                            <div class="container" id="content" style="padding: 16px;">
+                                <div class="container" id="header">
+                                    <div class="container" id="badges">
+                                        <span class="badge rounded-pill" style="margin-right: 2px;">Corporate Event</span>
+                                        <span class="badge rounded-pill" style="margin: 0px 2px;">Meeting</span>
+                                        <span class="badge rounded-pill">Presentation</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 text-start">
+                                            <h5 style="font-weight: bold;">Wisma 77 - Aula 3</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span class="badge rounded-pill" style="background-color: var(--bs-workfrom); color: black;">
+                                                Promo
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="padding: 0px; margin-bottom: 5px;">
+                                        <h6 style="color: var(--bs-gray-600);">Jakarta Selatan</h6>
+                                    </div>
+                                    <div class="container" style="padding: 0px;">
+                                        <h6 style="color: #0a58ca">7km dari mu</h6>
+                                    </div>
+                                </div>
+                                <p style="font-size: 14px; height: 15%;">Jl. Iskandar Muda No.7, Petisah Hulu, Kec. Medan Baru, Kota Medan, Sumatera Utara 20153</p>
+                                <div class="container" id="footer" style="padding: 0px;">
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <div class="col text-start">
+                                            <span>20 orang</span>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span style="font-weight: bold;">Rp. 1.550.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-start">
+                                            <p><span style="color: var(--bs-warning);">4.8</span><span style="color: var(--bs-gray-600);"> (12)</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="chat" href="chat-mitra.html">Chat</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="lihat" href="details.html">Pesan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 text-start">
+                        <div class="container" id="card">
+                            <img src="../images/usecase-card7.png">
+                            <div class="container" id="content" style="padding: 16px;">
+                                <div class="container" id="header">
+                                    <div class="container" id="badges">
+                                        <span class="badge rounded-pill" style="margin-right: 2px;">Corporate Event</span>
+                                        <span class="badge rounded-pill" style="margin: 0px 2px;">Meeting</span>
+                                        <span class="badge rounded-pill">Presentation</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 text-start">
+                                            <h5 style="font-weight: bold;">Wisma 77 - Aula 3</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span class="badge rounded-pill" style="background-color: var(--bs-workfrom); color: black;">
+                                                Promo
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="padding: 0px; margin-bottom: 5px;">
+                                        <h6 style="color: var(--bs-gray-600);">Jakarta Selatan</h6>
+                                    </div>
+                                    <div class="container" style="padding: 0px;">
+                                        <h6 style="color: #0a58ca">8km dari mu</h6>
+                                    </div>
+                                </div>
+                                <p style="font-size: 14px; height: 15%;">Jl. Iskandar Muda No.7, Petisah Hulu, Kec. Medan Baru, Kota Medan, Sumatera Utara 20153</p>
+                                <div class="container" id="footer" style="padding: 0px;">
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <div class="col text-start">
+                                            <span>8 orang</span>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span style="font-weight: bold;">Rp. 1.550.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-start">
+                                            <p><span style="color: var(--bs-warning);">4.8</span><span style="color: var(--bs-gray-600);"> (12)</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="chat" href="chat-mitra.html">Chat</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="lihat" href="details.html">Pesan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 text-start">
+                        <div class="container" id="card">
+                            <img src="../images/usecase-card8.png">
+                            <div class="container" id="content" style="padding: 16px;">
+                                <div class="container" id="header">
+                                    <div class="container" id="badges">
+                                        <span class="badge rounded-pill" style="margin-right: 2px;">Corporate Event</span>
+                                        <span class="badge rounded-pill" style="margin: 0px 2px;">Meeting</span>
+                                        <span class="badge rounded-pill">Presentation</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 text-start">
+                                            <h5 style="font-weight: bold;">Mall Ashta - MKG 2</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span class="badge rounded-pill" style="background-color: var(--bs-workfrom); color: black;">
+                                                Promo
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="padding: 0px; margin-bottom: 5px;">
+                                        <h6 style="color: var(--bs-gray-600);">Jakarta Selatan</h6>
+                                    </div>
+                                    <div class="container" style="padding: 0px;">
+                                        <h6 style="color: #0a58ca">8km dari mu</h6>
+                                    </div>
+                                </div>
+                                <p style="font-size: 14px; height: 15%;">Jl. Iskandar Muda No.7, Petisah Hulu, Kec. Medan Baru, Kota Medan, Sumatera Utara 20153</p>
+                                <div class="container" id="footer" style="padding: 0px;">
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <div class="col text-start">
+                                            <span>8 orang</span>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span style="font-weight: bold;">Rp. 1.550.000</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-start">
+                                            <p><span style="color: var(--bs-warning);">4.8</span><span style="color: var(--bs-gray-600);"> (12)</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="chat" href="chat-mitra.html">Chat</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="btn btn-primary" id="lihat" href="details.html">Pesan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col text-center">
+                        <nav style="display: inline-block;">
+                            <ul class="pagination">
+                              <li class="page-item"><a class="page-link" href="#"><</a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">...</a></li>
+                              <li class="page-item"><a class="page-link" href="#">6</a></li>
+                              <li class="page-item"><a class="page-link" href="#">></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../script/logout.js"></script>
+    </body>
+</html>

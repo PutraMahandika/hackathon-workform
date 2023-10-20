@@ -1,0 +1,22 @@
+.row {
+  height: 100%;
+}
+
+.col {
+  padding: 0;
+}
+
+#login-img {
+  height: 100%;
+  background-image: url("../images/login-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.col #content {
+  background-color: green;
+  height: 60%;
+}
+
+/*# sourceMappingURL=style.css.map */

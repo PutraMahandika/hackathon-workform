@@ -1,0 +1,292 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="../style/home.css" type="text/css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    </head>
+    <body>
+        <div class="container-fluid" id="body">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="row align-items-center" style="width: 100%;">
+                    <div class="col-3 text-start">
+                        <a class="navbar-brand" href="home.html"><img src="../images/Logo-WF.png"></a>
+                    </div>
+                    <div class="col-6 text-center">
+                        <div class="row justify-content-center">
+                            <div class="col-2 text-end" id="dropdowns">
+                                <div class="dropdown">
+                                    <button id="dropdowns" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Location
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-2" id="dropdowns">
+                                <div class="dropdown">
+                                    <a href="use_case.html" id="dropdowns" class="btn btn-secondary" type="button" style="width: 90px;">
+                                    Use Case
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-2 text-start" id="dropdowns">
+                                <div class="dropdown">
+                                    <a id="dropdowns" class="btn btn-secondary" href="aboutUs.html">
+                                      Blog
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row justify-content-center">
+                            <div class="col-5" id="form"></div>
+                            <div class="col text-end" id="login">
+                                <a class="btn btn-primary" href="logintes.html">Login</a>
+                            </div>
+                            <div class="col-4" id="signup">
+                                <a class="btn btn-primary" href="signup.html">Sign up</a>
+                            </div>
+                            <div class="col text-end" id="logout">
+                                <button class="btn btn-primary" onclick="logout()" style="display: inline-block;">logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid" id="navbar-dump">
+
+            </div>
+            <div class="container-fluid text-center" id="header">
+                <p class="fs-5">Office & Coworking Space</p>
+                <h1><span style="color: white;">Temukan Ruangan<br>untuk </span><span style="color: var(--bs-workfrom);">Setiap Pekerjaan</span></h1>
+                <p class="fs-5" style="padding: auto 90px; margin-top: 25px; font-weight: lighter;">Dengan berbagai pilihan ruangan yang dapat disesuaikan dengan kebutuhan Anda, kami akan membantu Anda mencari ruangan kerja yang sesuai dengan anggaran dan kebutuhan Anda. Temukan ruangan kerja Anda sekarang dan tingkatkan produktivitas kerja Anda!</p>
+                <a class="btn btn-primary" id="booknow" href="use_case.html">Pesan Sekarang</a>
+            </div>
+            <div class="container-fluid" id="section2">
+                <div class="container-fluid" id="partner">
+                    <div class="row justify-content-center">
+                        <div class="col text-center ">
+                            <p class="fs-6" style="color: var(--bs-gray-600); padding-bottom: 16px;">Partner kami</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col text-center">
+                            <img src="../images/image 9.png">
+                        </div>
+                        <div class="col text-center">
+                            <img src="../images/image 10.png">
+                        </div>
+                        <div class="col text-center">
+                            <img src="../images/image 11.png">
+                        </div>
+                        <div class="col text-center">
+                            <img src="../images/image 12.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid" id="CTA">
+                    <div class="row justify-content-center" style="padding-bottom: 32px;">
+                        <div class="col"></div>
+                        <div class="col-6 text-center">
+                            <div class="row justify-content-center text-center" id="role">
+                                <div class="col">
+                                    <input type="radio" class="btn-check" name="options" id="customer" autocomplete="off" checked="checked">
+                                    <label class="btn btn-secondary" for="customer" id="customer">as Customer</label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" class="btn-check" name="options" id="owner" autocomplete="off">
+                                    <label class="btn btn-secondary" for="owner" id="owner">as Building Owner</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row justify-content-center" id="description">
+                        <div class="col text-end">
+                            <img src="../images/image1 section2.png">
+                        </div>
+                        <div class="col text-start" id="text">
+                            <div class="container-fluid">
+                                <h1><i>Space</i> Terbaik untuk Semua Tim dan Pekerjaan Anda</h1>
+                                <p class="fs-6">Dengan berbagai pilihan ruangan yang dapat disesuaikan dengan kebutuhan Anda, kami akan membantu Anda mencari ruangan kerja yang sesuai dengan anggaran dan kebutuhan Anda. Temukan ruangan kerja Anda sekarang dan tingkatkan produktivitas kerja Anda!</p>
+                                <a class="btn btn-primary" href="use_case.html">
+                                    Pesan Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid" id="needs">
+                    <h1 class="text-center" style="padding-bottom: 32px; color: white; font-size: 40px; font-weight: bolder;">Sesuaikan Dengan <br>
+                        <span style="color: var(--bs-workfrom);">Kebutuhan</span>
+                    </h1>
+                    <div class="container-fluid" id="content">
+                        <div class="row justify-content-center">
+                            <div class="col text-end" id="content1">
+                                <div class="container" id="buttons">
+                                    <button class="btn btn-primary" id="btn-check">
+                                        Event
+                                    </button>
+                                    <p style="color: white; text-align: left">Rayakan perayaan dan acara terbaik dengan tempat pilihan terbaik dan akses lebih mudah.</p>
+                                    <a class="btn btn-primary" id="booknow" href="use_case.html">
+                                        Pesan Sekarang
+                                    </a>
+                                    <button class="btn btn-primary" id="btn-check">
+                                        Meeting
+                                    </button>
+                                    <button class="btn btn-primary" id="btn-check">
+                                        Photo Shoot
+                                    </button>
+                                    <button class="btn btn-primary" id="btn-check">
+                                        Video shoot
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col text-start" id="content2">
+                                <img src="../images/Frame 59.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="default">
+                <h1 class="text-center" style="padding-bottom: 32px; color: white; font-size: 40px; font-weight: bolder;">Pilih <span style="color: var(--bs-workfrom);"><i>Space</i></span><br>
+                    Terdekat
+                </h1>
+                <div class="row justify-content-center text-center" id="cards">
+                    <div class="col-3 text-start" style="margin-right: 12px;">
+                        <img src="../images/image-placeholder _- Change image here.png">
+                        <div class="container" id="content" style="padding: 16px;">
+                            <h5>The 101</h5>
+                            <p style="color: var(--bs-gray-600);">Jakarta Selatan</p>
+                            <p id="lokasi">Kawasan, Jl. Mega Kuningan Barat Jl. DR. Ide Anak Agung Gde Agung No.1, RT.5/RW.2, Kuningan, Kuningan Tim., Kecamatan Setiabudi, 12950</p>
+                            <div class="row">
+                                <div class="col">
+                                    <a class="btn btn-primary" id="chat" href="chat-mitra.html">Chat</a>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary" id="lihat" href="details.html">Lihat</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 text-start" style="margin: 0 12px;">
+                        <img src="../images/image-placeholder _- Change image here-1.png">
+                        <div class="container" id="content" style="padding: 16px;">
+                            <h5>Clapham</h5>
+                            <p style="color: var(--bs-gray-600);">Medan, Sumatra Utara</p>
+                            <p id="lokasi">Komp. Ruko Centre Point Medan Jl. Timor Blok G No. III/IV 2nd Floor, Gang Buntu, Medan Timur, 20231</p>
+                            <div class="row">
+                                <div class="col">
+                                    <a class="btn btn-primary" id="chat" href="chat-mitra.html">Chat</a>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary" id="lihat" href="details.html">Lihat</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 text-start" style="margin-left: 12px;">
+                        <img src="../images/image-placeholder _- Change image here-2.png">
+                        <div class="container" id="content" style="padding: 16px;">
+                            <h5>Spasi</h5>
+                            <p style="color: var(--bs-gray-600);">Medan, Sumatra Utara</p>
+                            <p id="lokasi">Komplek Multatuli Indah, Jl. Multatuli No.30-31, Hamdan, Kec. Medan Maimun, 20212</p>
+                            <div class="row">
+                                <div class="col">
+                                    <a class="btn btn-primary" id="chat" href="chat-mitra.html">Chat</a>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary" id="lihat" href="details.html">Lihat</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col text-center">
+                        <button class="btn btn-primary text-center" id="jelajahi">Jelajahi Semua Lokasi</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="faq">
+                <div class="row justify-content-center text-start">
+                    <div class="col" style="padding-right: 30px;">
+                        <h1 style="font-weight: bold; color: var(--bs-gray-800);">Frequently Asked Questions</h1>
+                    </div>
+                    <div class="col" style="padding-left: 30px;">
+                        <h2 style="color: var(--bs-gray-900); font-weight: bold;">Apa itu Workfrom?</h2>
+                        <p style="color: var(--bs-gray-900);">Workfrom merupakan sebuah platform yang menghubungkan penyewa dengan ruang kantor yang tepat di mana saja di berbagai lokasi. Kami dapat membantu menemukan kebutuhan penyewa dan pemilik gedung.</p>
+                        <hr style="border-top: 1px solid var(--bs-gray-300);">
+                        <h2 style="color: var(--bs-gray-900); font-weight: bold;">Fasilitas apa saja yang ditawarkan?</h2>
+                        <hr style="border-top: 1px solid var(--bs-gray-300);">
+                        <h2 style="color: var(--bs-gray-900); font-weight: bold;">Apakah buka di akhir pekan dan hari libur</h2>
+                        <hr style="border-top: 1px solid var(--bs-gray-300);">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="footer">
+                <div class="row justify-content-center text-start">
+                    <div class="col" >
+                        <img src="../images/Logo-WF.png">
+                        <p style="width: 270px; margin: 15px 0px;">Komp. Ruko Centre Point Medan Jalan Timor Blok G No. III/IV 2nd Floor, Gang Buntu, Medan Timur, Medan City, North Sumatra 20231</p>
+                        <p>(+6261) 805 109 77</p>
+                    </div>
+                    <div class="col text-end" >
+                        <div class="row" id="rowfooter">
+                            <div class="col-4">
+                                
+                            </div>
+                            <div class="col text-start">
+                                <h5>LOCATION</h5><br>
+                                <p>
+                                    Clapham<br>
+                                    The 101<br>
+                                    Yafurni<br>
+                                    Spasi<br>
+                                    Kalingga<br>
+                                </p>
+                                
+                            </div>
+                            <div class="col text-start">
+                                <h5>USE CASE</h5>
+                                <p>
+                                    Event<br>
+                                    Meeting<br>
+                                    Office<br>
+                                    Photo Shoot<br>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <h5>COMPANY</h5>
+                                <p>
+                                    Contact Us<br>
+                                    Blog<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border-top: 1px solid var(--bs-gray-500);">
+            </div>
+        </div>
+        <script src="../script/logout.js"></script>
+    </body>
+</html>

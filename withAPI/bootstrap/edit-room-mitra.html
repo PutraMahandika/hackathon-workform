@@ -1,0 +1,267 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="../style/edit-room-mitra.css" type="text/css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <script src="../script/logout.js"></script>
+        <script src="../script/dashboard-mitra.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid" id="body">
+            <div class="container-fluid text-center" id="sidebar">
+                <img src="../images/Logo-WF.png" style="margin-bottom: 20px;"><br>
+                <a class="btn btn-primary" href="dashboard-mitra.html">Dashboard</a>
+                <a class="btn btn-primary" href="pesanan-mitra.html">Pesanan</a>
+                <a class="btn btn-primary" id="active">Room</a>
+                <a class="btn btn-primary" href="chat-mitra.html">Chat</a>
+                <a class="btn btn-primary" onclick="logout()">Logout</a>
+            </div>
+            <div class="container-fluid" id="dashboard">
+                <h3 style="margin-bottom: 24px;"><b>Transaction Details</b></h3>
+                <div class="row" style="margin-bottom: 24px;">
+                    <div class="col-6">
+                        <img src="../images/detail-image1.png" style="width: 100%; margin-bottom: 8px;">
+                        <div class="row" id="otherimages" style="margin-bottom: 8px;">
+                            <div class="col" style="margin-right: 4px;">
+                                <img src="../images/detail-image2.png">
+                            </div>
+                            <div class="col" style="margin: 0px 4px;">
+                                <img src="../images/detail-image3.png">
+                            </div>
+                            <div class="col" style="margin-left: 4px;">
+                                <img src="../images/detail-image4.png">
+                            </div>
+                        </div>
+                        <input type="file" class="form-control" style="margin-bottom: 8px;">Upload</input>
+                        <div id="upload-list">
+                            <img src="../images/detail-image2.png">
+                            <span><a href="#">image1.png</a></span>
+                        </div>
+                        <div id="upload-list">
+                            <img src="../images/detail-image3.png">
+                            <span><a href="#">image2.png</a></span>
+                        </div>
+                        <div id="upload-list">
+                            <img src="../images/detail-image4.png">
+                            <span><a href="#">image3.png</a></span>
+                        </div>
+                    </div>
+                    <div class="col" id="deskripsi">
+                        <div class="row">
+                            <div class="col">
+                                <div>
+                                    <span>Nama Ruangan</span>
+                                    <input class="form-control" type="text">
+                                </div>
+                                <div>
+                                    <span>Status</span>
+                                    <select class="form-select">
+                                        <option selected>Tersedia</option>
+                                        <option value="1">Masa Penyewaan</option>
+                                        <option value="2">Tutup</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <span>Harga/Jam</span>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">Rp</span>
+                                        <input type="text" class="form-control" placeholder="Harga">
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>Harga/Minggu (5 Hari)</span>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">Rp</span>
+                                        <input type="text" class="form-control" placeholder="Harga">
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>Promo</span>
+                                    <select class="form-select">
+                                        <option selected>Aktif</option>
+                                        <option value="1">Tidak Aktif</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <span>Lokasi</span>
+                                    <select class="form-select">
+                                        <option selected>Jakarta Selatan, DKI Jakarta</option>
+                                        <option value="1">Bandung, Jawa Barat</option>
+                                        <option value="2">Medan, Sumatra Utara</option>
+                                        <option value="3">Tangerang Selatan, Banten</option>
+                                        <option value="4">Jakarta Pusat,DKI Jakarta</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <span>Harga</span>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Jumlah" >
+                                        <span class="input-group-text" id="basic-addon2">Orang</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>Harga/Hari (8 Jam)</span>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">Rp</span>
+                                        <input type="text" class="form-control" placeholder="Harga">
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>Harga/Bulan (20 Hari)</span>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">Rp</span>
+                                        <input type="text" class="form-control" placeholder="Harga">
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>Luas Ruangan</span>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Luas" >
+                                        <span class="input-group-text" id="basic-addon2">m²</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div>
+                                    <span>Alamat Lengkap</span>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div>
+                                    <span>Tambahan Meja</span>
+                                    <input class="form-control" type="text">
+                                </div>
+                                <div>
+                                    <span>Harga/Meja</span>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">Rp</span>
+                                        <input type="text" class="form-control" placeholder="Harga">
+                                    </div>
+                                </div>
+                                <div id="checkbox">
+                                    <span>Fasilitas</span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Internet
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Building Access
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Printing Service
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Coffee
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Bangku
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Meja
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <span>Tambahan Kursi</span>
+                                    <input class="form-control" type="text">
+                                </div>
+                                <div>
+                                    <span>Harga/Kursi</span>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">Rp</span>
+                                        <input type="text" class="form-control" placeholder="Harga">
+                                    </div>
+                                </div>
+                                <div id="checkbox">
+                                    <span>Fasilitas</span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Corporate Event
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Meeting
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Presentation
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#batal">Hapus Ruangan</button>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#simpan">Simpan</button>
+                    <button class="btn btn-primary">Keluar</button>
+                    <div class="modal fade" id="batal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Hapus Ruangan</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    Apakah anda yakin akan menghapus ruangan ini?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="simpan" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan Perubahan</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    Apakah anda yakin akan menyimpan perubahan ini?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
